@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,7 @@ Route::get('/about/{name}',function($name){
 // OR
 
 Route::view('/home','home');
+
+// Controller
+Route::get('/username',[UserController::class,'getUserName']);
+Route::get('/user/{name}',[UserController::class,'getName']);
