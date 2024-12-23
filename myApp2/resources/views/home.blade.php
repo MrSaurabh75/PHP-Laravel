@@ -1,3 +1,5 @@
+@include('comman.dataFile',['page'=>"This is the data"])
+@includeif('comman.header')
 <h1>Home Page</h1>
 <h4>My name is {{$name}}</h4>
 <div>
