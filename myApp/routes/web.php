@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\newController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +38,5 @@ Route::view('/home','home');
 // Controller
 Route::get('/username',[UserController::class,'getUserName']);
 Route::get('/user/{name}',[UserController::class,'getName']);
+Route::get('/admin/{fruit}',[newController::class,'getAdmin']);
+Route::get('/ab',[newController::class,'viewExistance']);
