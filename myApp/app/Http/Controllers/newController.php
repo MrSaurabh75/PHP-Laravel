@@ -11,8 +11,8 @@ class newController extends Controller
         return view('home',['fruit'=>$fruit]);
     }
     function viewExistance(){
-        if(View::exits('about')){
-            return view('about');
+        if(View::exits('login')){
+            return view('login');
         }
         else{
             return "No View About!";
